@@ -1,0 +1,98 @@
+1. Multiply
+   function multiply(a, b){
+  a * b
+}
+This code does not execute properly. Try to figure out why.
+=>   function multiply(a, b){
+  return a * b
+}
+
+2. Get Planet Name By ID
+function getPlanetName(id){
+  var name;
+  switch(id){
+    case 1:
+      name = 'Mercury'
+    case 2:
+      name = 'Venus'
+    case 3:
+      name = 'Earth'
+    case 4:
+      name = 'Mars'
+    case 5:
+      name = 'Jupiter'
+    case 6:
+      name = 'Saturn'
+    case 7:
+      name = 'Uranus'
+    case 8:
+      name = 'Neptune'
+  }
+  
+  return name;
+}
+The function is not returning the correct values. Can you figure out why?
+Example (Input --> Output ):
+3 --> "Earth"
+=> function getPlanetName(id){
+  var name;
+  switch(id){
+    case 1:
+      name = 'Mercury'
+      break
+    case 2:
+      name = 'Venus'
+      break
+    case 3:
+      name = 'Earth'
+      break
+    case 4:
+      name = 'Mars'
+      break
+    case 5:
+      name = 'Jupiter'
+      break
+    case 6:
+      name = 'Saturn'
+      break
+    case 7:
+      name = 'Uranus'
+      break
+    case 8:
+      name = 'Neptune'
+      break
+  }
+  
+  return name;
+}
+
+3. Reversed Strings
+=>  function solution(str){
+  var splitstring=str.split("")
+  var reversestring=splitstring.reverse()
+  var reversed= reversestring.join("")
+  return reversed
+}
+
+4. Even or Odd
+
+=> function evenOrOdd(number) {
+  if(number%2==0){
+    return "Even"
+  }
+  else{
+    return "Odd"
+  }
+    
+}
+
+5. Counting sheep...
+=>  function countSheeps(sheep) {
+  var counter=0
+  sheep.forEach(item=>{
+    if(item) counter++
+  })
+   return counter
+  }
+
+6. 
