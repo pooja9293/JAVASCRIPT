@@ -221,4 +221,51 @@ class SmallestIntegerFinder {
   return x.replace(/ /g, '')
 }
 
-20. 
+20. Beginner - Lost Without a Map
+=>  function maps(arr){
+  let l=[]
+  for(let i=0;i<arr.length;i++){
+    let a=arr[i]*2
+    l.push(a)
+    
+  }
+  return l;
+
+}
+
+21. Is he gonna survive?
+A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
+
+Return true if yes, false otherwise :)
+=>  function hero(bullets, dragons){
+//Get Coding!
+ const result = bullets/dragons >= 2 ? true:false;
+  return result;
+  
+}
+
+22. Array plus array
+=>  function arrayPlusArray(arr1, arr2) {
+  let sum1=0
+  let sum2=0
+    for(let i=0;i<arr1.length;i++){
+        sum1=sum1+arr1[i]
+    } 
+    for(let i=0;i<arr2.length;i++){
+       sum2=sum2+arr2[i] 
+    }
+  return sum1+sum2//something went wrong
+}
+
+23. Century From Year
+=>  function century(year) {
+  if(year%100==0){
+    return Math.floor(year/100)
+  }
+  else{
+    return Math.floor(year/100)+1
+  }
+  
+}
+
+24. 
