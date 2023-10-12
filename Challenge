@@ -95,4 +95,130 @@ Example (Input --> Output ):
    return counter
   }
 
-6. 
+6. Vowel Count
+=>  function getCount(str) {
+  return (str.match(/[aeiou]/gi)||[]).length;
+  }
+
+7. Jenny's secret message
+Jenny has written a function that returns a greeting for a user. However, she's in love with Johnny, and would like to greet him slightly different. She added a special case to her function, but she made a mistake.
+
+Can you help her?
+=>  function greet(name){
+  if(name === "Johnny")
+    return "Hello, my love!";
+  return "Hello, " + name + "!";
+}
+
+8. Is n divisible by x and y?
+Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero numbers
+=>  function isDivisible(n, x, y) {
+  return n%x==0 && n%y==0;
+  }
+
+9. Return Negative
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+=>  function makeNegative(num) {
+  if(num<0){
+    return num;
+  }
+  return num*-1;
+}
+
+10. Find the smallest integer in the array
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let min=args[0];
+    for(let i=0; i<args.length;i++){
+      if(args[i]<min){
+        min=args[i];
+      }
+    }
+    return min;
+  }
+}
+
+11. Grasshopper - Summation
+=>  var summation = function (num) {
+  // Code here
+  let sum=0;
+  for(let i=1;i<num+1;i++){
+    sum=sum+i;
+  }
+  return sum;
+}
+
+12. Get the mean of an array
+=>  function getAverage(marks){
+  //TODO : calculate the downward rounded average of the marks array
+  let sum=0;
+  for(let i=0;i<marks.length;i++){
+    sum=sum+marks[i];
+  }
+  return Math.floor(sum/marks.length);
+}
+
+13. Rock Paper Scissors!
+=>  const rps = (p1, p2) => {
+  if(p1==p2)
+    return 'Draw!';
+  if(p1=='rock' && p2=='scissors')
+    return 'Player 1 won!'
+  else if(p1=='scissors' && p2=='paper')
+    return 'Player 1 won!'
+  else if(p1=='paper' && p2=='rock')
+    return 'Player 1 won!'
+  else
+    return 'Player 2 won!'
+};
+
+14. Remove First and Last Character
+=>  function removeChar(str){
+ return str.substr(1,str.length-2);
+
+};
+
+15. Sum of positive
+=> function positiveSum(arr) {
+    let sum=0;
+  if(arr.length==0){
+    return sum;
+  }
+   for(let i=0; i<arr.length; i++){
+     if(arr[i]>0){
+       sum=sum+arr[i];
+     }
+   }return sum;
+}
+
+16. Basic Mathematical Operations
+=>  function basicOp(operation, value1, value2)
+{
+  // Code
+  switch(operation){
+      case '+': return value1+value2;
+      case '-': return value1-value2;
+      case '*': return value1*value2;
+      case '/': return value1/value2;
+  }
+}
+
+17. String repeat
+=>  function repeatStr (n, s) {
+  return s.repeat(n);
+}
+
+18. Convert a string to an array
+=>  function stringToArray(string){
+
+	// code code code
+  return string.split(" ");
+
+}
+
+19. Remove String Spaces
+=>  function noSpace(x){
+  return x.replace(/ /g, '')
+}
+
+20. 
